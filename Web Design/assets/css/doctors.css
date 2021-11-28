@@ -1,0 +1,673 @@
+@media only screen and (max-width:500px){
+
+
+
+  body {
+    overflow-x: hidden;
+  }
+  body .konten {
+    margin-top: 30%
+  }
+  body .konten .judul1 {
+    font-size: 18px;
+  }
+  body .konten .foto1 img{
+    width: 100%;
+  }
+  body .konten .foto1 .dokter .image-overlay{
+    display: none;
+  }
+  body .konten .foto1 .dokter2 .image-overlay{
+    display: none;
+  }
+  body .konten .foto1 .dokter3 .image-overlay{
+    display: none;
+  }
+  body .konten .foto2 img:hover{
+    transform: scale(1);
+      
+  }
+  body .konten .foto2 img {
+    filter: grayscale(0);
+    margin: 2%;
+  }
+  body .konten .foto2 {
+
+    width: 100%;
+
+  }
+  body .konten .judul2{
+    font-size: 18px;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    text-decoration: none;
+    width: 100%;
+  }
+
+header
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 10px 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #FFF;
+min-height: 0;
+box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+} 
+/************************************************ NAVBAR BRAND LOGO ****************************************************/
+.logo
+{
+  height: 100px;
+  width: 190px;
+  margin-left: 20px;
+ }
+/*header .logo
+{
+  position: sticky;
+  max-width: 100px;
+}*/
+ .text-logo1{
+   color: rgb(255, 0, 0);
+   display: none;
+  }
+ .text-logo2{
+  color: rgb(0, 195, 255);
+}
+
+@media only screen and (max-width:780px){
+    .text-logo1  {
+       position: relative;
+       display: flex;
+       max-width: 100px;
+       font-weight: bold;
+       font-size:25px;  
+       align-content: center;
+       align-items: center;
+    }
+    header{
+      padding: 0;
+      padding-left: 5px;
+      height: 100px;
+      width: 100%;
+    }
+    strong{
+      padding: 10px;
+    }
+  }
+  @media(max-width:520px){
+    .text-logo1 {
+      position: relative;  
+      display: flex; 
+      font-size: 20px;
+      
+    }
+    header{
+      padding: 0;
+      padding-left: 5px;
+      align-items: flex-start;
+      height: 50px;
+      justify-content: flex-start ;
+    } 
+  }
+  @media(max-width:400px){
+    .text-logo1 {
+      position: relative;  
+      display: flex; 
+      font-size: 20px;
+   }
+  }
+  /**********************************MENGHILANGKAN LOGO SAAT TAMPILAN MOBILE**************************************/
+  @media(max-width:780px){
+    .logo {
+       display: none;
+    }
+  }
+  @media(max-width:520px){
+    .logo {
+      display: none;
+    }
+  }
+  @media(max-width:400px){
+    .logo {
+      display: none;
+    }
+  }
+  /************************************************ NAVBAR ****************************************************/
+ul{
+    margin-right: -200px;
+    margin-left: 200px;
+  }
+  
+  header .nv
+  {
+  position: relative;
+  display: flex;
+  }
+  header ul li
+  {
+    list-style: none;
+  }
+  header ul li a
+  {
+  display: inline-block;
+  color: #f84a4a;
+  font-weight: 400;
+  
+  margin-right: 20px;
+  text-decoration: none;
+  }
+  
+  @media only screen and (max-width:780px){
+  .item  {
+    display: none;
+  }
+  ul{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  }
+  /************************************************ BTN SIGN UP****************************************************/
+
+.btn1{
+    margin-top: 10px;
+  }
+  .btn1{
+    width:200px;
+    height: 45px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #f84a4a;
+    margin-top: -3px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+  }
+  .btn1:hover{
+    background-color: #d83737;
+    transition: all ease 0.3s;
+  }
+  
+  @media(max-width:780px){
+    .btn1{
+      margin-top: 2px;
+      margin-left: 100px;
+        width:100px;
+        height: 44px;
+    }
+  }
+  @media(max-width:520px){
+    .btn1{
+      margin-top: 4px;
+      height: 42px; 
+      margin-left: 200px;
+      margin-right: 80px;
+    }
+  }
+  
+  
+  /************************************************ ANIMASI BUTTON ****************************************************/
+  li.topBotomBordersOut a:before, li.topBotomBordersOut a:after 
+  {
+    position: absolute;
+      left: 0px;
+     width: 100px;
+      height: 2px;
+      background: #f79797;
+      content: "";
+      opacity: 0;
+      transition: all 0.5s;
+  }
+  li.topBotomBordersOut a:before 
+  {
+      top: -10px;
+      transform: translateY(-10px);
+  }
+  li.topBotomBordersOut a:after 
+  {
+      bottom: -10px;
+      transform: translateY(10px);
+  }
+  li.topBotomBordersOut a:hover:before, li.topBotomBordersOut a:hover:after 
+  {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  li.container a 
+  {
+  margin-top: 10px;    
+  position: sticky; 
+  }
+
+  /************************************Menu ICON************************************************/
+  .container1 {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    margin-top: 300px;
+    margin-left: -10px;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 0 0;
+    transition: 0.4s;
+    display: none;
+    cursor: pointer;
+  }
+  .bar4 {
+    display: none;
+  }
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+  .change .bar4 {
+   display: flex;
+   transition: 0.9s;
+   width: 100%;
+    height: 5px;
+    padding-top: 5px;
+    transition: 0.4s;
+   }
+  @media(max-width:580px){
+    .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px ;
+      margin-left: 435px;     /*uytyutguytgyuyufryufyfyfyf*/
+      transition: 0.4s;
+      display: block;
+    }
+    .container1{
+      margin-right: 0;
+      margin: 0;
+      width: 100%;
+      margin-top: 6px;
+      z-index: 1;
+    }
+  .nav {
+    background-color: #2c3e50; 
+    width: 100%;
+    margin-left: -5px;
+    padding: 0;
+    margin-top: 4px;
+    height: 295px;
+    font-size: 20px;
+    padding: 0px;
+    width: 100%;
+  }
+   }
+
+   
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .ab{
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding-top: 20px;
+    font-weight: bolder;
+  }
+  .ab:hover{
+    transition: ease 0.3s;
+    color: #db4b4b;
+    
+  }
+  hr{
+    height: 1px;
+    width: 90px;
+  }
+
+  @media(min-width:581px){
+    hr{
+      width: 0;
+    }
+  }
+ 
+  section
+{
+  position: relative;
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(0, 0, 0);
+}
+
+/*KONTEN1*//*KONTEN1*//*KONTEN1*//*KONTEN1*//*KONTEN1*//*KONTEN1*//*KONTEN1*//*KONTEN1*/
+/*KONTEN1*//*KONTEN1*//*KONTEN1*//*KONTEN1*//*KONTEN1*//*KONTEN1*//*KONTEN1*//*KONTEN1*/
+
+.konten {
+	margin-top: 20%;
+}
+.konten .judul1 {
+	text-align: center;
+}
+.konten .foto1{
+	display: flex;
+	width: 100%; 
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: center;
+
+}
+.konten .foto1 .dokter {
+	position: relative;
+	width: 20%;
+	height: 10%;
+	overflow: hidden;
+	margin: 2%;
+}
+.konten .foto1 .dokter img {
+	display: block;
+	width: 100%;
+}
+.konten .foto1 .dokter .image-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+.konten .foto1 .dokter .image-overlay > * {
+	transform: translateY(20%);
+	transition: transform 0.25s;
+}
+.konten .foto1 .dokter .image-overlay--blur {
+	backdrop-filter: blur(5px);
+}
+.konten .foto1 .dokter .image-overlay:hover {
+	opacity: 1;
+}
+.konten .foto1 .dokter .judul {
+	text-align: center;
+}
+.konten .foto1 .dokter .deskripsi {
+	margin-top: 2%;
+	text-align: center;
+}
+
+
+.konten .foto1 .dokter2 {
+	position: relative;
+	width: 20%;
+	height: 2%;
+	overflow: hidden;
+	margin: 2%;
+}
+.konten .foto1 .dokter2 img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.konten .foto1 .dokter2 .image-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+.konten .foto1 .dokter2 .image-overlay > * {
+	transform: translateY(5%);
+	transition: transform 0.25s;
+}
+.konten .foto1 .dokter2 .image-overlay--blur {
+	backdrop-filter: blur(20px);
+}
+.konten .foto1 .dokter2 .image-overlay:hover {
+	opacity: 1;
+}
+.konten .foto1 .dokter2 .judul {
+	text-align: center;
+}
+.konten .foto1 .dokter2 .deskripsi {
+	margin-top: 2% ;
+	text-align: center;
+}
+
+.konten .foto1 .dokter3 {
+	position: relative;
+	width: 20%;
+	margin: 2%;
+}
+.konten .foto1 .dokter3 img {
+	display: block;
+	width: 100%;
+}
+.konten .foto1 .dokter3 .image-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+.konten .foto1 .dokter3 .image-overlay > * {
+	transform: translateY(5%);
+	transition: transform 0.25s;
+}
+.konten .foto1 .dokter3 .image-overlay--blur {
+	backdrop-filter: blur(20px);
+}
+.konten .foto1 .dokter3 .image-overlay:hover {
+	opacity: 1;
+}
+.konten .foto1 .dokter3 .judul {
+	text-align: center;
+}
+.konten .foto1 .dokter3 .deskripsi {
+	margin-top: 2% ;
+	text-align: center;
+}
+
+.konten .judul2 {
+	text-align: center;
+	margin-top: 8%;
+	margin-bottom: -5%;
+}
+.konten .foto2 {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 0 auto;
+	margin-top:5%;
+}
+.konten .foto2 img {
+	height: 200px;
+	width: 200px;
+	margin-left:3%;
+	margin-top:3%;
+	overflow: hidden;
+	filter: grayscale(100%);
+	transition: 1s;
+}
+.konten .foto2 img:hover {
+	filter: grayscale(0%);
+	transform: scale(1.1);
+}
+
+.page-footer {
+  position: relative;
+  display: block;
+  padding-top: 80px;
+  padding-bottom: 16px;
+  margin-top: 10%;
+  background-color: #2D3B38;
+  color: #fff;
+}
+
+@media (min-width: 768px){
+.pl-md-3, .px-md-3 {
+    padding-left: 1rem !important;
+}}
+@media (min-width: 768px){
+.pr-md-3, .px-md-3 {
+    padding-right: 1rem !important;
+}}
+
+.row3 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.pb-3, .py-3 {
+  padding-bottom: 1rem !important;
+}
+.pt-3, .py-3 {
+  padding-top: 1rem !important;
+}
+@media (min-width: 992px){
+.col-lg-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}}
+
+@media (min-width: 576px){
+.col-sm-9 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 25%;
+}}
+
+
+.col-sm-9{
+  max-width: 100%;
+}
+
+.footer-menu {
+    position: relative;
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.footer-menu a, .footer-link {
+  display: inline-block;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all .2s ease;
+}
+
+.footer-link {
+  padding: 0;
+  margin-bottom: 16px;
+}
+.mt-2, .my-2 {
+  margin-top: 0.5rem !important;
+}
+.mt-3, .my-3 {
+  margin-top: 1rem !important;
+}
+
+.footer-sosmed a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  background-color: #26312F;
+  color: #ffff;
+  transition: all .2s ease;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+
+a {
+  color: #07be94;
+  text-decoration: none;
+  background-color: transparent;
+}
+.page-footer h6 {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+h6, .h6 {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+@media(max-width:620px){
+.col-sm-6 {
+margin-left: 170px;
+}
+}
+
+@media(max-width:620px){
+ 
+  .row3 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+     margin-right: 0; 
+    margin-left: 0; 
+    
+}
+  
+
+  }
